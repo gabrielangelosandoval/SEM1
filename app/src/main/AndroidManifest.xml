@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kapampangan.sandoval.attendancechecker" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.kapampangan.sandoval.attendancechecker.ListStudent"
+            android:label="@string/title_ListStudent"
+            android:parentActivityName="com.kapampangan.sandoval.attendancechecker.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kapampangan.sandoval.attendancechecker.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.kapampangan.sandoval.attendancechecker.SearchStudent"
+            android:label="@string/title_SearchStudent"
+            android:parentActivityName="com.kapampangan.sandoval.attendancechecker.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kapampangan.sandoval.attendancechecker.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.kapampangan.sandoval.attendancechecker.Settings"
+            android:label="@string/title_Settings"
+            android:parentActivityName="com.kapampangan.sandoval.attendancechecker.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kapampangan.sandoval.attendancechecker.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.kapampangan.sandoval.attendancechecker.SearchResult"
+            android:label="@string/title_SearchResults"
+            android:parentActivityName="com.kapampangan.sandoval.attendancechecker.SearchStudent" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kapampangan.sandoval.attendancechecker.SearchStudent" />
+        </activity>
+    </application>
+
+</manifest>

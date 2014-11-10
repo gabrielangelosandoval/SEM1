@@ -1,0 +1,384 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/mainlayout">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ust_logo"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="210dp"
+            android:layout_height="fill_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Attendance"
+                android:id="@+id/textView2"
+                android:textAlignment="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout4"
+            android:background="@drawable/engg_logo" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sections:"
+                android:id="@+id/tvheadSection"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"/>
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="1CSA"
+                        android:id="@+id/btn1CSA"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="1CSB"
+                        android:id="@+id/btn1CSB"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="1CSC"
+                        android:id="@+id/btn1CSC"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="1CSD"
+                        android:id="@+id/btn1CSD"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="1CSE"
+                        android:id="@+id/btn1CSE"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="2CSA"
+                        android:id="@+id/btn2CSA"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="2CSB"
+                        android:id="@+id/btn2CSB"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="2CSC"
+                        android:id="@+id/btn2CSC"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="2CSD"
+                        android:id="@+id/btn2CSD"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="3CSA"
+                        android:id="@+id/btn3CSA"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="3CSB"
+                        android:id="@+id/btn3CSB"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="3CSC"
+                        android:id="@+id/btn3CSC"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:text="3CSD"
+                        android:id="@+id/btn3CSD"
+                        android:background="@drawable/drw_sectionbutton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="setSection" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+            </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/studentImage"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_launcher"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Surname"
+                    android:id="@+id/tvSurname"
+                    android:layout_toEndOf="@+id/studentImage"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/studentImage"
+                    android:layout_marginLeft="21dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seat number:"
+                    android:id="@+id/textView" />
+
+                <Spinner
+                    android:id="@+id/studentNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dp"
+                    android:prompt="@string/seat_label" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="145dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Present" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Late" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Absent" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="30dp">
+
+                    <Button
+                        android:id="@+id/btnRecord"
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dip"
+                        android:onClick="updateRecord"
+                        android:text="Record"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
