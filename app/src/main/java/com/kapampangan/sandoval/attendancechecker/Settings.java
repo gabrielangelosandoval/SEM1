@@ -88,6 +88,14 @@ public class Settings extends ActionBarActivity {
         toast.show();
     }
 
+    public void confirmSettings(View v){
+
+        Context context = getApplicationContext();
+        CharSequence text = "Changes saved!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
     /**
      * A placeholder fragment containing a simple view.
      */
